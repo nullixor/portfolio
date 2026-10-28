@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0d">
+  <meta name="description" content="James H. Yang’s portfolio: tools, ciphers, responsible AI, music and community. Livingston High School, class of 2027.">
+  <title>James H. Yang — Portfolio</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/exclusion.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body data-page="home" class="simple-background">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ambient-gradient" aria-hidden="true"></div>
+  <div id="world" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="James, Home">J</a>
+    <nav class="mechanical nav-frame" aria-label="Main navigation">
+      <div class="nav-inner"><a href="#home" aria-current="page">Home</a><a href="#about">About Me</a><a href="#projects">Projects</a></div>
+      <div class="project-progress" role="progressbar" aria-label="Project position" aria-valuemin="1" aria-valuemax="5" style="--progress:20%" aria-valuenow="1"><span></span></div>
+    </nav>
+    <button class="settings-toggle" aria-label="Display settings" aria-haspopup="dialog" aria-controls="display-settings" title="Display settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.8 2-.6 2.6-2 .9-2.3-.8-2.2 3.8 1.8 1.8-.2 2.3-1.7 1.8 2.2 3.8 2.5-.7 1.8 1.1.7 2.4h4.4l.6-2.6 2-.9 2.3.8 2.2-3.8-1.8-1.8.2-2.3 1.7-1.8-2.2-3.8-2.5.7-1.8-1.1-.7-2.4z"/><circle cx="12" cy="12" r="3.5"/></svg></button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page home-page" data-view="home" aria-labelledby="home-title">
+      <div class="home-copy">
+        <h1 id="home-title">James<span class="title-period">.</span></h1>
+        <p class="subtitle">Ideas into motion.</p>
+        <p class="intro">I build tools, untangle ciphers,<br>and find stories in how things work.</p>
+        <a class="quiet-link home-resume" href="./assets/James-Yang-Resume.pdf" download="James-Yang-Resume.pdf">Résumé (PDF)</a>
+      </div>
+      <div class="clock-fallback" aria-hidden="true"><div></div><i></i><b></b></div>
+    </section>
+    <section class="page about-page" data-view="about" aria-labelledby="about-title" hidden>
+      <div class="page-heading"><h1 id="about-title">About <em>me.</em></h1></div>
+      <div class="about-composition">
+        <article class="mechanical stone bio"><div class="panel-content"><h2>Hi, I’m James.</h2><p>I’m James H. Yang, a Livingston High School student in the class of 2027.</p><p class="muted">I’m curious about where technology, storytelling and people meet. Ciphers were one way in; building tools keeps me exploring.</p></div></article>
+        <div class="heart-space"><button class="heart-button" aria-label="Energize the heart" title="Energize the heart"><span class="heart-fallback" aria-hidden="true">◇</span></button></div>
+        <article class="mechanical stone notes"><div class="panel-content"><h2>Questions first.</h2><p>Cryptography, cybersecurity, data science and responsible AI—and how technology interacts with culture.</p><a class="quiet-link" href="#projects">See the work</a></div></article>
+      </div>
+      <section class="resume-section" aria-labelledby="resume-title">
+        <div><h2 id="resume-title">Résumé.</h2><p>A closer look at my projects, experience and interests.</p></div>
+        <a class="quiet-link" href="./assets/James-Yang-Resume.pdf" download="James-Yang-Resume.pdf">Download résumé (PDF)<span aria-hidden="true"> ↗</span></a>
+      </section>
+    </section>
+    <section class="page projects-page" data-view="projects" aria-labelledby="projects-title" hidden>
+      <div class="page-heading"><h1 id="projects-title">Selected <em>work.</em></h1></div>
+      <div class="project-composition">
+        <div class="project-art" aria-hidden="true"></div>
+        <article class="mechanical project-panel" tabindex="0" aria-label="Projects. Scroll or use arrow keys to browse."><div class="panel-content">
+          <div class="project-copy" aria-live="polite">
+          <h2 id="project-title">AI moderation.</h2>
+          <p id="project-description">I’m exploring how retrieval-augmented generation could support AI moderation, with safer use in schools in mind.</p>
+          <button class="quiet-link" id="project-open">View project</button>
+          </div>
+        </div></article>
+      </div>
+    </section>
+  </main>
+  <dialog id="project-dialog" class="mechanical" aria-labelledby="project-dialog-title"><div class="dialog-content"><button class="dialog-close" aria-label="Close project">×</button><p class="project-index">1 / 5 · Ongoing research</p><h2 id="project-dialog-title"></h2><p class="dialog-description"></p><p class="project-detail muted"></p></div></dialog>
+  <dialog id="display-settings" class="settings-dialog" aria-labelledby="settings-title">
+    <div class="dialog-content">
+      <button class="settings-close dialog-close" aria-label="Close display settings">×</button>
+      <h2 id="settings-title">Display.</h2>
+      <label class="settings-option"><span><strong>Simple background</strong><small>A dark, flowing glow with fewer effects.</small></span><input id="simple-background" type="checkbox" checked></label>
+      <label class="settings-option"><span><strong>Pause animations</strong><small>Keep the scene still while you read.</small></span><input id="pause-motion" type="checkbox"></label>
+      <p class="settings-note">Your background choice stays on this device.</p>
+    </div>
+  </dialog>
+  <noscript><p class="noscript">JavaScript is needed to explore the portfolio pages.</p></noscript>
+</body>
+</html>

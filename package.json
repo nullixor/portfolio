@@ -1,0 +1,13 @@
+{
+  "name": "forge-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check dist/main.js && node --check dist/world.js && node --check dist/heart.js && node --check dist/heart-orientation.js && node --check dist/environment.js && node --check dist/projection.js && node --check dist/core-bloom.js && node --check dist/lava-progress.js && node --check dist/cliff.js && node --check dist/lava.js && node --check dist/lava-transport.js && node --check dist/landscape-layout.js"
+  },
+  "version": "1.0.0",
+  "description": "Exclusion-led volcanic gearpunk portfolio with procedural 3D scenes.",
+  "engines": {
+    "node": ">=22"
+  }
+}
